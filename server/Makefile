@@ -1,5 +1,5 @@
 
-default : upgmake uploaded uservice
+default : upgmake
 
 upgmake :
 	$(MAKE) -f objs/upgmake/Makefile
