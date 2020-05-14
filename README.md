@@ -27,7 +27,7 @@ PATH=$PATH:/usr/local/upgrade/sbin/
 
 source \~/.bash\_profile
 到任意地方试一下upgmake有如下输出则表明upgmake已正常安装
-![安装成功](http://develop.wsqpg.com/deploy/upgmake/upgmake-install-success.png)
+![安装成功](https://github.com/jianguankun/cz-upgrader/blob/master/docs/upgmake-install-success.png)
 
 
 ***
