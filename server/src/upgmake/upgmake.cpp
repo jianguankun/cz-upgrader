@@ -200,6 +200,7 @@ int main(int argc, char *argv[])
     delete pXMLDoc;
 
 	bool bShowResult = true;
+    bool exception = false;
 
 	if (strlen(guidefile_path_last) > 0)
 	{
@@ -218,6 +219,7 @@ int main(int argc, char *argv[])
 				{
 					remove(guidefile_path);
 					bShowResult = false;
+                    exception = true;
 				}
 			}
 			else
@@ -237,6 +239,10 @@ int main(int argc, char *argv[])
 // 		cout << "│  guide file : " << setiosflags(ios::left) << setw(40) << guidefile_name << "│"<< endl;
 // 		cout << "└───────────────────────────────────────────────────────┘" << endl;
 	}
+
+    if(exception){
+        return 1;
+    }
 
     return 0;
 }
